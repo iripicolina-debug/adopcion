@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Una web que defiende los derechos de las mascotas y con ello la ley de protección animal" >
+	<title>Resultados - App de mascotas</title>
+	<link rel="stylesheet" href="css/mascota.css">
+	<link rel="icon" href="imag/perrito.ico" type="image/x-icon">
+	<!-- Importar fuente -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- CABECERA COMÚN -->
+<header>
+  <nav class="nav-principal">
+	<div class="nav-izquierda">
+		<img src="imag/logo.png" alt="Logo" class="logofoto">
+		<a href="index.html" class="logo">APP DE MASCOTAS</a>
+	</div>
+    <div class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="mascotas.html">Mascotas</a>
+      <a href="detalle_mascota.html">Detalles de la Mascota</a>
+      <a href="formulario.html">Formulario</a>
+    </div>
+    <input type="search" placeholder="Buscar..." class="busqueda">
+  </nav>
+</header>
+
+<main class="resultados">
+	<!-- HERO/INTRO -->
+	<section class="hero-resultados">
+		<h1>🎉 Resultados para ti</h1>
+		<p class="intro">Según tus respuestas en el cuestionario, estas mascotas encajan mejor contigo</p>
+	</section>
+
+	<!-- FILTROS MEJORADOS -->
+	<section class="seccion-filtros">
+		<h2>Filtra tus resultados</h2>
+		<div class="filtros-grid">
+		  <div class="filtro-item">
+			<label for="orden">Ordenar por:</label>
+			<select id="orden">
+				<option value="cercanos">Más cercanos</option>
+				<option value="jovenes">Más jóvenes</option>
+				<option value="populares">Más populares</option>
+			</select>
+		  </div>
+		  
+		  <div class="filtro-item">
+			<label for="tipo">Tipo de animal:</label>
+			<select id="tipo">
+				<option value="todos">Todos</option>
+				<option value="perros">🐶 Perros</option>
+				<option value="gatos">🐱 Gatos</option>
+				<option value="peces">🐠 Peces</option>
+				<option value="otros">🦜 Otros</option>
+			</select>
+		  </div>
+		  
+		  <div class="filtro-item">
+			<label for="tamano">Tamaño:</label>
+			<select id="tamano">
+				<option value="todos">Todos</option>
+				<option value="pequenos">Pequeños</option>
+				<option value="medianos">Medianos</option>
+				<option value="grandes">Grandes</option>
+			</select>
+		  </div>
+		  <button class="btn-buscar">🔍 Buscar</button>
+		</div>
+	</section>
+
+	<!-- RECOMENDADOS -->
+	<section class="categoria">
+	<h2>⭐ Recomendados para ti</h2>
+	<div class="cards-grid">
+		<div class="card">
+			<img src="imag/perro5.jpg" alt="Mike">
+			<div class="card-contenido">
+				<h3>Mike</h3>
+				<p class="info">4 años • Mediano</p>
+				<a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="imag/gato1.jpg" alt="Misi">
+			<div class="card-contenido">
+				<h3>Misi</h3>
+				<p class="info">3 años • Mediano</p>
+				<a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="imag/pez2.jpg" alt="Mully">
+			<div class="card-contenido">
+				<h3>Mully</h3>
+				<p class="info">2 meses • Pequeño</p>
+				<a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+		</div>
+		</div>
+		<div class="card">
+			<img src="imag/gato3.jpg" alt="Felix">
+			<div class="card-contenido">
+				<h3>Felix</h3>
+				<p class="info">2 años • Mediano</p>
+				<a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+			</div>
+		</div>
+			<div class="card">
+			<img src="imag/perro6.jpg" alt="Luna">
+			<div class="card-contenido">
+				<h3>Luna</h3>
+				<p class="info">5 años • Grande</p>
+				<a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="imag/perro4.jpg" alt="Simba">
+			<div class="card-contenido">
+				<h3>Simba</h3>
+				<p class="info">1 año • Mediano</p>
+				<a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="imag/perro7.jpg" alt="Laila">
+			<div class="card-contenido">
+				<h3>Laila</h3>
+				<p class="info">7 meses • Mediano</p>
+				<a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+			</div>
+		</div>
+		<div class="card">
+			<img src="imag/pez4.jpg" alt="Will">
+			<div class="card-contenido">
+				<h3>Will</h3>
+				<p class="info">9 meses • Pequeño</p>
+				<a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+			</div>
+		</div>
+	</div>
+	</section>
+
+	<!-- OTRAS OPCIONES -->
+	<section class="categoria categoria-secundaria">
+	<h2>🐾 Otras opciones</h2>
+	<div class="cards-grid">
+		<div class="card">
+		<img src="imag/reptil.jpg" alt="Rookie">
+		<div class="card-contenido">
+			<h3>Rookie</h3>
+			<p class="info">1 año • Pequeño</p>
+			<a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+		</div>
+		</div>
+		<div class="card">
+		<img src="imag/tortuga.jpg" alt="Rita">
+		<div class="card-contenido">
+		  <h3>Rita</h3>
+		  <p class="info">10 años • Pequeño</p>
+		  <a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+		</div>
+		</div>
+		<div class="card">
+		<img src="imag/loro.jpg" alt="Sally">
+		<div class="card-contenido">
+		  <h3>Sally</h3>
+		  <p class="info">4 años • Mediano</p>
+		  <a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+		</div>
+		</div>
+		<div class="card">
+		<img src="imag/conejo.jpg" alt="Pedro">
+		<div class="card-contenido">
+		  <h3>Pedro</h3>
+		  <p class="info">9 meses • Mediano</p>
+		  <a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+		</div>
+		</div>
+		<div class="card">
+		<img src="imag/canario.jpg" alt="Chis">
+		<div class="card-contenido">
+			<h3>Chis</h3>
+			<p class="info">3 meses • Pequeño</p>
+			<a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+		</div>
+		</div>
+		<div class="card">
+		<img src="imag/hamster.jpg" alt="Coco">
+		<div class="card-contenido">
+			<h3>Coco</h3>
+			<p class="info">6 meses • Pequeño</p>
+			<a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+		</div>
+		</div>
+		<div class="card">
+		<img src="imag/periquito.jpeg" alt="Kiwi">
+		<div class="card-contenido">
+			<h3>Kiwi</h3>
+			<p class="info">2 años • Pequeño</p>
+			<a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+		</div>
+		</div>
+		<div class="card">
+		<img src="imag/cobaya.jpg" alt="Nube">
+		<div class="card-contenido">
+			<h3>Nube</h3>
+			<p class="info">8 meses • Pequeño</p>
+			<a href="detalle_mascota.html" class="btn-ver">Ver más</a>
+		</div>
+		</div>
+	</div>
+	</section>
+
+	<!-- CONSEJOS (TU VERSIÓN CON IMÁGENES ALTERNADAS) -->
+	<section class="seccion-consejos-alternados">
+	<h2>Consejos y Actividades</h2>
+	<p class="subtitulo">Todo lo que necesitas saber para cuidar a tu mascota</p>
+
+	<div class="actividades">
+	  <article class="tip-card izquierda">
+		<div class="tip-contenido">
+		  <span class="icon">🚶‍♂️</span>
+		  <h3>Paseos Diarios</h3>
+		  <p>Un perro necesita al menos 30 minutos de paseo al día para mantenerse saludable y feliz. Los paseos no solo son ejercicio físico, también son estimulación mental.</p>
+		</div>
+		<div class="tip-imagen">
+		  <img src="imag/paseo.jpg" alt="Paseo con perro">
+		</div>
+	  </article>
+	  
+	  <article class="tip-card derecha">
+		<div class="tip-imagen">
+		  <img src="imag/juego.jpg" alt="Jugar con gato">
+		</div>
+		<div class="tip-contenido">
+		  <span class="icon">🎮</span>
+		  <h3>Juega con tu Gato</h3>
+		  <p>Dedica 15 minutos al día para fortalecer el vínculo. El juego ayuda a prevenir el aburrimiento y mantiene a tu gato activo y estimulado.</p>
+		</div>
+	  </article>
+	  
+	  <article class="tip-card izquierda">
+		<div class="tip-contenido">
+		  <span class="icon">🍲</span>
+		  <h3>Alimentación Adecuada</h3>
+		  <p>Ofrece pienso adaptado a la edad y tamaño de tu mascota. Una nutrición equilibrada es la base de una vida larga y saludable.</p>
+		</div>
+		<div class="tip-imagen">
+		  <img src="imag/comida.jpeg" alt="Alimentación">
+		</div>
+	  </article>
+	  
+	  <article class="tip-card derecha">
+		<div class="tip-imagen">
+		  <img src="imag/higiene.jpg" alt="Higiene mascota">
+		</div>
+		<div class="tip-contenido">
+		  <span class="icon">🛁</span>
+		  <h3>Higiene Regular</h3>
+		  <p>Un baño mensual y cepillado regular evitan problemas de piel. Mantén las uñas cortas y revisa sus oídos periódicamente.</p>
+		</div>
+	  </article>
+	</div>
+	</section>
+</main>
+<footer class="footer">
+	<div class="containerF">
+		<!--Columna 1: Marca y Misión-->
+		<div class="footer-col">
+			<h4 class="logo-foot">🐾 App de Mascotas</h4>
+			<p class="mision">
+				Conectando corazones y colas. Nuestra misión es dar una segunda oportunidad a cada animal.
+			</p>
+			<p>© 2025 App de Mascotas</p>
+		</div>
+		<!--Columna 2: Información Legal-->
+		<div class="footer-col">
+			<h4>Informacion legal</h4>
+			<ul>
+				<li><a href="#">Política de Privacidad</a></li>
+				<li><a href="#">Términos de Servicio</a></li>
+				<li><a href="#">Preguntas Frecuentes (FAQ)</a></li>
+				<li><a href="#">Política de Privacidad</a></li>
+			</ul>
+		</div>
+		<!--Columna 3: Contacto y Redes Sociales-->
+		<div class="footer-col">
+			<h4>Contacto</h4>
+			<p>📧 <a href="mailto:info@mascotasapp.com">info@mascotasapp.com</a></p>
+			<p>📞 +34 123 456 789</p>
+			
+			<div class="social-icons">
+				<!-- Facebook -->
+				<a href="https://facebook.com" target="_blank" aria-label="Facebook">
+				<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+				<path d="M14 10.5h2.5L17 13h-2.5v7h-3v-7h-2V10h2V8.45c0-1.6 0.96-2.6 3.01-2.6h2.49v2.5H15c-.88 0-1.25.12-1.25.75V10.5z"/>
+				</svg>
+				</a>
+				<!-- Instagram -->
+				<a href="https://instagram.com" target="_blank" aria-label="Instagram">
+				  <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+					<path d="M12 2C6.48 2 2 6.48 2 12s4.48 
+					10 10 10 10-4.48 10-10S17.52 2 12 
+					2zm3.2 2.3c.73 0 1.35.62 
+					1.35 1.35s-.62 1.35-1.35 
+					1.35-1.35-.62-1.35-1.35.62-1.35 
+					1.35-1.35zM12 8.7c2.32 0 4.3 1.98 
+					4.3 4.3s-1.98 4.3-4.3 
+					4.3-4.3-1.98-4.3-4.3 
+					1.98-4.3 4.3-4.3zm0 1.8c-1.37 
+					0-2.5 1.13-2.5 2.5s1.13 2.5 
+					2.5 2.5 2.5-1.13 
+					2.5-2.5-1.13-2.5-2.5-2.5z"/>
+				  </svg>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<p>Hecho con ❤️ por los animales.</p>
+	</div>
+	<a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="¡CSS Válido!" />
+    </a>
+	</p>
+</footer>
+</body>
+</html>

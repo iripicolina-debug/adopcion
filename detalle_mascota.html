@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Detalle de mascota</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Una web que defiende los derechos de las mascotas y con ello la ley de protección animal" >
+	<link rel="stylesheet" href="css/detallemascota.css">
+	<link rel="icon" href="imag/perrito.ico" type="image/x-icon">
+	<!-- Importar fuente -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- CABECERA COMúN -->
+<header>
+  <nav class="nav-principal">
+	<div class="nav-izquierda">
+		<img src="imag/logo.png" alt="Logo" class="logofoto">
+		<a href="index.html" class="logo">APP DE MASCOTAS</a>
+	</div>
+    <div class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="mascotas.html">Mascotas</a>
+      <a href="detalle_mascota.html">Detalles de la Mascota</a>
+      <a href="formulario.html">Formulario</a>
+    </div>
+    <input type="search" placeholder="Buscar..." class="busqueda">
+  </nav>
+</header>
+<main class = "detalles">
+	<!-- TABLA IZQUIERDA -->
+	<aside class="col-izquierda">
+	<h3>Índice de Contenidos</h3>
+	<ul>
+		<li><a href="#perfil">👤 Perfil e Historia de Mike</a></li>
+		<li><a href="#caracteristicas">📋 Características Detalladas</a></li>
+		<li><a href="#requisitos">📝 Proceso de Adopción</a></li>
+		<li><a href="#contacto">🏠 Apadrinamiento</a></li>
+		<li><a href="#ubicacion">📍 Ubicación del Refugio</a></li>
+	</ul>
+	<hr>
+	<h3>Opinión del visitante</h3>
+	<form>
+		<fieldset>
+			<legend class ="pregunta">¿Qué te parece Mike?</legend>
+			<label><input type="radio" name="valoracion" value="adorable">Adorable</label><br>
+			<label><input type="radio" name="valoracion" value="activo">Muy activo</label><br>
+			<label><input type="radio" name="valoracion" value="tranquilo">Tranquilo</label><br>
+			
+			<p class ="pregunta">¿Qué cualidades valoras de una mascota?</p>
+			<label><input type="checkbox" name="cualidad" value="jugueton">Juguetón</label><br>
+			<label><input type="checkbox" name="cualidad" value="cariñoso">Cariñoso</label><br>
+			<label><input type="checkbox" name="cualidad" value="obediente">Obediente</label><br>
+			
+			<p class ="pregunta">¿Qué tipo de mascota prefieres?</p>
+			<select>
+				<optgroup label="Pequeñas">
+					<option value="gato">Gato</option>
+					<option value="conejo">Conejo</option>
+				</optgroup>
+				<optgroup label="Grandes">
+					<option value="perro">Perro</option>
+					<option value="caballo">Caballo</option>
+				</optgroup>
+			</select>
+			<p class= "pregunta">Déjanos un comentario:</p>
+			<textarea rows="4" placeholder="Escribe aquí..."></textarea>
+
+			<br>
+			<input type="submit" value="Enviar">
+		</fieldset>
+    </form>
+	<hr>
+	<h3>Tabla de ejemplos</h3>
+	<table class= "tabla-fusion">
+		<tr>
+			<th>Tipo de Macota</th>
+			<th>Comida</th>
+			<th colspan= "2">Ejercicio</th>
+			<th>Tiempo de Compañia</th>
+		</tr>
+		<tr>
+			<td>Perro</td>
+			<td>Pienso + comida casera</td>
+			<td>30 min</td>
+			<td>1-2 horas al dia</td>
+			<td>Alta</td>
+		</tr>
+		<tr>
+			<td>Gato</td>
+			<td>Pienso + lata</td>
+			<td colspan= "2">30 min al dia</td>
+			<td>Media</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Pez</td>
+			<td>Acuario especial</td>
+			<td colspan= "2">N/A</td>
+			<td>Baja</td>
+		</tr>
+		<tr>
+			<td>Alimento específico</td>
+			<td colspan="2">N/A</td>
+			<td>Baja</td>
+		</tr>
+	</table>
+	</aside>
+	<!-- CENTRO -->
+	<div class="centro">
+		<article id="perfil" class="tarjeta-animal">
+			<div id="info">
+				<h1>Mike</h1>
+				<span class="tipo">🐶 Perro</span>
+				<p class="resumen">Mike es un mestizo de dos años lleno de energía...</p>
+				<ul class="detalles-animal">
+					<li>Sexo: Macho</li>
+					<li>Tamaño: Mediano</li>
+					<li>Peso: 18 kg</li>
+					<li>Salud: Vacunado, castrado</li>
+					<li>Compatibilidad: Niños + Perros</li>
+					<li>Refugio: Esperanza Animal (Madrid)</li>
+				</ul>
+				<div class= "nota">
+					<p>¡Importante! Necesita ejercicio diario y una persona que pueda dedicarle tiempo para entrenar y socializar.</p>
+				</div>
+			</div>
+			<div class="fotoPerfil">
+				<a href="formulario.html" class="adp">🐾 ¡Adóptame!</a>
+				<img src="imag/perro5.jpg" alt="Mike">
+			</div>
+		</article>
+		<article id="caracteristicas">
+			<h2>CARACTERISTICAS</h2>
+			<table>
+				<tr><th>Edad</th><td>2 años</td></tr>
+				<tr><th>Energia</th><td>Alta</td></tr>
+				<tr><th>Microchip</th><td>Sí</td></tr>
+				<tr><th>Comportamiento</th><td>Juguetón y amigable</td></tr>
+				<tr><th>Necesidades especiales</th><td>Ejercicio diario y entrenamiento</td></tr>
+				<tr><th>Refugio</th><td>Esperanza Animal (Madrid)</td></tr>
+				<tr><th>Nivel de entrenamiento</th><td>Básico</td></tr>
+				<tr><th>Habilidades</th><td>Se sienta, da la pata</td></tr>
+				<tr><th>Rutina diaria</th><td>1 hora de paseo + juegos</td></tr>
+			</table>
+		</article>
+	</div>
+	<!-- DERECHA -->
+    <aside class="col-derecha">
+		<div id="contacto" class="apadrinar">
+        <h3>¡Apadrina a Mike!</h3>
+        <a href="formulario.html" class="btn">Iniciar Solicitud</a>
+		</div>
+		<article id="requisitos">
+			<h2>Proceso de Adopción</h2>
+			<div class="pasos">
+				<ol>
+					<li>Paso: Solicitud
+					<p>Enviar el formulario de pre-adopción.</p></li>
+					<li>Paso: Entrevista
+					<p>Charla con un voluntario para conocer tu estilo de vida.</p></li>
+					<li>Paso: Visita
+					<p>Conocer a Mike en el refugio..</p></li>
+				</ol>
+			</div>
+			<blockquote>"La adopción es el compromiso de una década. Piensa con el corazón, pero adopta con la cabeza."</blockquote>
+		</article>
+		<h3 id="ubicacion">Ubicación del Refugio</h3>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.3662842676893!2d-2.9234487!3d43.2630126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fbd6b3b7e83%3A0x7c8f5e7b9c4a5d6e!2sSociedad%20Protectora%20de%20Animales%20y%20Plantas%20de%20Bilbao!5e0!3m2!1ses!2ses!4v1234567890"></iframe> <!-- He investigado y como añadir un mapa seria como añadir un video he decidido agregarlo-->
+    </aside>
+</main>
+	
+<footer class="footer">
+	<div class="containerF">
+		<!--Columna 1: Marca y Misión-->
+		<div class="footer-col">
+			<h4 class="logo-foot">🐾 App de Mascotas</h4>
+			<p class="mision">
+				Conectando corazones y colas. Nuestra misión es dar una segunda oportunidad a cada animal.
+			</p>
+			<p>© 2025 App de Mascotas</p>
+		</div>
+		<!--Columna 2: Información Legal-->
+		<div class="footer-col">
+			<h4>Informacion legal</h4>
+			<ul>
+				<li><a href="#">Política de Privacidad</a></li>
+				<li><a href="#">Términos de Servicio</a></li>
+				<li><a href="#">Preguntas Frecuentes (FAQ)</a></li>
+				<li><a href="#">Política de Privacidad</a></li>
+			</ul>
+		</div>
+		<!--Columna 3: Contacto y Redes Sociales-->
+		<div class="footer-col">
+			<h4>Contacto</h4>
+			<p>📧 <a href="mailto:info@mascotasapp.com">info@mascotasapp.com</a></p>
+			<p>📞 +34 123 456 789</p>
+			
+			<div class="social-icons">
+				<!-- Facebook -->
+				<a href="https://facebook.com" target="_blank" aria-label="Facebook">
+				<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+				<path d="M14 10.5h2.5L17 13h-2.5v7h-3v-7h-2V10h2V8.45c0-1.6 0.96-2.6 3.01-2.6h2.49v2.5H15c-.88 0-1.25.12-1.25.75V10.5z"/>
+				</svg>
+				</a>
+				<!-- Instagram -->
+				<a href="https://instagram.com" target="_blank" aria-label="Instagram">
+				  <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+					<path d="M12 2C6.48 2 2 6.48 2 12s4.48 
+					10 10 10 10-4.48 10-10S17.52 2 12 
+					2zm3.2 2.3c.73 0 1.35.62 
+					1.35 1.35s-.62 1.35-1.35 
+					1.35-1.35-.62-1.35-1.35.62-1.35 
+					1.35-1.35zM12 8.7c2.32 0 4.3 1.98 
+					4.3 4.3s-1.98 4.3-4.3 
+					4.3-4.3-1.98-4.3-4.3 
+					1.98-4.3 4.3-4.3zm0 1.8c-1.37 
+					0-2.5 1.13-2.5 2.5s1.13 2.5 
+					2.5 2.5 2.5-1.13 
+					2.5-2.5-1.13-2.5-2.5-2.5z"/>
+				  </svg>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<p>Hecho con ❤️ por los animales.</p>
+	</div>
+	<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="¡CSS Válido!" />
+    </a>
+	</p>
+</footer>
+</body>
+</html>

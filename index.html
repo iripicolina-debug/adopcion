@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Una web que defiende los derechos de las mascotas y con ello la ley de protección animal" >
+    <title>Encuentra tu Mascota Ideal - App de Mascotas</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="icon" href="imag/perrito.ico" type="image/x-icon">
+	<!-- Importar fuente -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- CABECERA COMÚN -->
+<header>
+  <nav class="nav-principal">
+	<div class="nav-izquierda">
+		<img src="imag/logo.png" alt="Logo" class="logofoto">
+		<a href="index.html" class="logo">APP DE MASCOTAS</a>
+	</div>
+    <div class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="mascotas.html">Mascotas</a>
+      <a href="detalle_mascota.html">Detalles de la Mascota</a>
+      <a href="formulario.html">Formulario</a>
+    </div>
+    <input type="search" placeholder="Buscar..." class="busqueda">
+  </nav>
+</header>
+
+<main id="quiz-mascotas">
+<!-- Imagen grande -->
+	<section class="hero">
+	  <img src="imag/grupo.jpg" alt="Mascotas" class="hero-img">
+	  <div class="hero-texto">
+		<h1>Encuentra tu mascota ideal</h1>
+		<p>Explora, descubre y ayuda a mascotas perdidas o en adopción</p>
+	  </div>
+	</section>
+	
+	<div class = "contenedor">
+		<!-- Columna izquierda: índice -->
+		<aside class = "columna izquierda">
+			<div class="indice-nav">
+			<h3>📋 Índice</h3>
+			<ul>
+				<li><a href="#cuestionario">Cuestionario</a></li>
+				<li><a href="#comparativa">Comparativa de mascotas</a></li>
+				<li><a href="#consejos">Consejos rápidos</a></li>
+				<li><a href="#vacunacion">Calendario de vacunación</a></li>
+				<li><a href="#destacadas">Mascotas destacadas</a></li>
+			</ul>
+			</div>
+			<hr>
+			<h3 id="comparativa">Comparativa rápida</h3>
+			<table>
+				<tr>
+					<th>Animal</th>
+					<th>Espacio</th>
+					<th>Tiempo</th>
+					<th>Cuidados</th>
+				  </tr>
+				  <tr>
+					<td>Perro</td><td>Mucho</td><td>Alto</td><td>Alto</td>
+				  </tr>
+				  <tr>
+					<td>Gato</td><td>Medio</td><td>Medio</td><td>Medio</td>
+				  </tr>
+				  <tr>
+					<td>Tortuga</td><td>Poco</td><td>Bajo</td><td>Bajo</td>
+				  </tr>
+				  <tr>
+					<td>Peces</td><td>Poco</td><td>Bajo</td><td>Mínimo</td>
+				  </tr>
+			</table>
+			<hr>
+			<div id="consejos">
+				<h3>Consejos rápidos</h3>
+				<div class="lista-consejos">
+					<p>🐠 Peces → ideales si no tienes mucho espacio ni tiempo.</p>
+					<p>🐢 Tortugas → tranquilas y fáciles de cuidar.</p>
+					<p>🐱 Gatos → independientes pero cariñosos.</p>
+					<p>🐶 Perros → compañeros activos y leales.</p>
+				</div>
+			</div>
+			<hr>
+			<div id="vacunacion">
+				<h3>📅 Calendario de vacunación</h3>
+				<div class="vacunas-info">
+					<ul class="vacunas">
+						<li>Perros
+							<ul>
+								<li>6-8 semanas &rarr; Moquillo, parvorius</li>
+								<li>10-12 semanas &rarr; Refuerzo de moquillo y parvo, leptospira</li>
+								<li>14-16 semanas &rarr; Rabia</li>
+								<li>1 vez al año &rarr; Refuerzo general</li>
+							</ul>
+						</li>
+						
+						<li>Gatos
+							<ul>
+								<li>6-8 semanas &rarr; Rinotraqueitis, calicivirus, panleucopenia</li>
+								<li>10-12 semanas &rarr; Refuerzo de las anteriores</li>
+								<li>14-16 semanas &rarr; Leucemia felina</li>
+								<li>1 vez al año &rarr; Refuerzo general</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</aside>
+		<!-- Columna central -->
+		<section class="columna centro">
+		<h2 id="cuestionario">Encuentra tu mascota ideal</h2>
+		<form action="mascotas.html" method="get" class="cuestionario">
+		<div class="pregunta">
+			<h3>1. ¿Cuánto espacio tienes en casa?</h3>
+			<label><input type="radio" name="espacio" value="poco"> Poco</label><br>
+			<label><input type="radio" name="espacio" value="medio"> Medio</label><br>
+			<label><input type="radio" name="espacio" value="mucho"> Mucho</label>
+		</div>
+		<div class="pregunta">
+			<h3>2. ¿Cuánto tiempo libre tienes al día?</h3>
+			<label><input type="radio" name="tiempo" value="poco"> Poco</label><br>
+			<label><input type="radio" name="tiempo" value="medio"> Medio</label><br>
+			<label><input type="radio" name="tiempo" value="mucho"> Mucho</label>
+		</div>
+		<div class="pregunta">
+			<h3>3. ¿Qué tipo de interacción prefieres?</h3>
+			<label><input type="radio" name="interaccion" value="observar"> Observar</label><br>
+			<label><input type="radio" name="interaccion" value="tranquila"> Tranquila</label><br>
+			<label><input type="radio" name="interaccion" value="cariñosa"> Cariñosa</label><br>
+			<label><input type="radio" name="interaccion" value="activa"> Activa</label>
+		</div>
+
+		<div class="pregunta">
+			<h3>4. ¿Qué nivel de cuidados estás dispuesto a dar?</h3>
+			<label><input type="radio" name="cuidados" value="minimos"> Mínimos</label><br>
+			<label><input type="radio" name="cuidados" value="bajos"> Bajos</label><br>
+			<label><input type="radio" name="cuidados" value="medios"> Medios</label><br>
+			<label><input type="radio" name="cuidados" value="altos"> Altos</label>
+		</div>
+		<div class="pregunta">
+			<h3>5. ¿Cuál es tu presupuesto mensual aproximado para tu mascota?</h3>
+			<label><input type="radio" name="presupuesto" value="bajo"> Bajo (hasta 30€)</label><br>
+			<label><input type="radio" name="presupuesto" value="medio"> Medio (30€ - 70€)</label><br>
+			<label><input type="radio" name="presupuesto" value="alto"> Alto (más de 70€)</label>
+		</div>
+		<button type="submit">Ver recomendaciones</button>
+		</form>
+		</section>
+
+		<!-- Columna derecha: consejos o mascota destacada -->
+		<aside class="columna derecha">
+			<h3>Mascotas destacadas</h3>
+			<div class= "animales_destacados">
+				<img src="imag/firulais.jpg" alt="Perrito en adopción">
+				<p>Firulais, 2 años, busca familia.</p>
+				<img src="imag/gato.jpg" alt="Gatito en adopción">
+				<p>Mia, 4 años, busca familia.</p>
+				<img src="imag/pez.jpg" alt="Pez en adopción">
+				<p>Bubble, 3 meses, busca familia.</p>
+				<img src="imag/perro3.jpg" alt="Perrito en adopción">
+				<p>Charlie, 5 años, busca familia.</p>
+			</div>
+			<hr>
+			<article class= "article-adopcion">
+				<h4>¡Prepara tu hogar para un nuevo amigo!</h4>
+				<p>Antes de la adopción, asegúrate de que tu casa sea un entorno seguro. Quita objetos pequeños, cables, y productos tóxicos que la mascota pueda alcanzar.</p>
+				<blockquote class="cita-motivacional">
+					<p>"Adoptar una mascota no es solo darle un hogar, es darle una segunda oportunidad."</p>
+					<footer class="f1">— Fundación Patitas Felices <cite>La importancia de la adopción.</cite></footer>
+				</blockquote>
+			</article>
+			<a href="formulario.html" class="btn">Adopta ahora</a>
+		</aside>
+	</div>
+</main>
+<footer class="footer">
+	<div class="containerF">
+		<!--Columna 1: Marca y Misión-->
+		<div class="footer-col">
+			<h4 class="logo-foot">🐾 App de Mascotas</h4>
+			<p class="mision">
+				Conectando corazones y colas. Nuestra misión es dar una segunda oportunidad a cada animal.
+			</p>
+			<p>© 2025 App de Mascotas</p>
+		</div>
+		<!--Columna 2: Información Legal-->
+		<div class="footer-col">
+			<h4>Informacion legal</h4>
+			<ul>
+				<li><a href="#">Política de Privacidad</a></li>
+				<li><a href="#">Términos de Servicio</a></li>
+				<li><a href="#">Preguntas Frecuentes (FAQ)</a></li>
+				<li><a href="#">Política de Privacidad</a></li>
+			</ul>
+		</div>
+		<!--Columna 3: Contacto y Redes Sociales-->
+		<div class="footer-col">
+			<h4>Contacto</h4>
+			<p>📧 <a href="mailto:info@mascotasapp.com">info@mascotasapp.com</a></p>
+			<p>📞 +34 123 456 789</p>
+			
+			<div class="social-icons">
+				<!-- Facebook -->
+				<a href="https://facebook.com" target="_blank" aria-label="Facebook">
+				<svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+				<path d="M14 10.5h2.5L17 13h-2.5v7h-3v-7h-2V10h2V8.45c0-1.6 0.96-2.6 3.01-2.6h2.49v2.5H15c-.88 0-1.25.12-1.25.75V10.5z"/>
+				</svg>
+				</a>
+				<!-- Instagram -->
+				<a href="https://instagram.com" target="_blank" aria-label="Instagram">
+				  <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+					<path d="M12 2C6.48 2 2 6.48 2 12s4.48 
+					10 10 10 10-4.48 10-10S17.52 2 12 
+					2zm3.2 2.3c.73 0 1.35.62 
+					1.35 1.35s-.62 1.35-1.35 
+					1.35-1.35-.62-1.35-1.35.62-1.35 
+					1.35-1.35zM12 8.7c2.32 0 4.3 1.98 
+					4.3 4.3s-1.98 4.3-4.3 
+					4.3-4.3-1.98-4.3-4.3 
+					1.98-4.3 4.3-4.3zm0 1.8c-1.37 
+					0-2.5 1.13-2.5 2.5s1.13 2.5 
+					2.5 2.5 2.5-1.13 
+					2.5-2.5-1.13-2.5-2.5-2.5z"/>
+				  </svg>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<p>Hecho con ❤️ por los animales.</p>
+	</div>
+	<a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="¡CSS Válido!" />
+    </a>
+	</p>
+</footer>
+</body>
+</html>
